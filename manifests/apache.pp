@@ -35,7 +35,7 @@ class railsapp::apache (
         default_vhost => false,
     }
 
-    class { '::rvm::passenger::apache':
+    class { 'rvm::passenger::apache':
       version      => $passengerversion,
       ruby_version => $rubyversion,
       mininstances => '3',
