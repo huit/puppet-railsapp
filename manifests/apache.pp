@@ -39,9 +39,7 @@ class railsapp::apache (
       version            => $passengerversion,
       ruby_version       => $rubyversion,
       mininstances       => '3',
-      maxinstancesperapp => '0',
       maxpoolsize        => '30',
-      spawnmethod        => 'smart-lv2',
     }
 
 
